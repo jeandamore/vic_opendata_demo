@@ -1,4 +1,6 @@
 
+function layers_wms(map) {
+
 	var vic_opendata = {
 		wms: {
 			url: 'https://services.land.vic.gov.au/catalogue/publicproxy/guest/dv_geoserver/wms',
@@ -12,8 +14,6 @@
 			]
 		}
 	};
-
-	var map = new OpenLayers.Vicmap.Map('map');
 
 	for(var i=0; i<vic_opendata.wms.layers.length; i++) {
 
@@ -31,20 +31,4 @@
 
 	}
 
-	var fromProjection = new OpenLayers.Projection("EPSG:4326"); // transform from WGS 1984
-	var toProjection = new OpenLayers.Projection("EPSG:3111"); // vicgrid 94
-	var sportAndRec = new OpenLayers.Layer.Vector("(DHHS) Sports & Recreational Facilities", {
-		  projection: fromProjection,
-		  strategies: [new OpenLayers.Strategy.Fixed()],
-		  protocol: new OpenLayers.Protocol.HTTP({
-		    url: "https://jeandamore.github.io/vic_opendata_demo/SportandRec.geojson",
-		    format: new OpenLayers.Format.GeoJSON()
-		  })
-		});
-  map.addLayer(sportAndRec);
-
-	// Bendigo
-	var lonlat = new OpenLayers.LonLat(2435540.8444746, 2525620.5773373);
-	map.setCenter(lonlat);
-	map.zoomTo(6);
-	//show_coords_on_click(map);
+}
