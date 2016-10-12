@@ -46,5 +46,5 @@
 	// Bendigo
 	var lonlat = new OpenLayers.LonLat(2435540.8444746, 2525620.5773373);
 	map.setCenter(lonlat);
-	map.zoomTo(5);
+	map.zoomTo(6);
 	//show_coords_on_click(map);
