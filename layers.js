@@ -31,6 +31,17 @@
 
 	}
 
+	var projection = new OpenLayers.Projection("EPSG:3111");
+	var sportAndRec = new OpenLayers.Layer.Vector("(DHHS) Sports & Recreational Facilities", {
+		  projection: projection,
+		  strategies: [new OpenLayers.Strategy.Fixed()],
+		  protocol: new OpenLayers.Protocol.HTTP({
+		    url: "SportandRec.geojson",
+		    format: new OpenLayers.Format.GeoJSON()
+		  })
+		});
+  map.addLayer(sportAndRec);
+
 	// Bendigo
 	var lonlat = new OpenLayers.LonLat(2435540.8444746, 2525620.5773373);
 	map.setCenter(lonlat);
