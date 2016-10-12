@@ -10,7 +10,9 @@ function layers_wms(map) {
 				{name:'Townships', layer:'VMADMIN_TOWNSHIP_POLYGON'},
 				{name:'Recreation Carparks', layer:'FORESTS_RECWEB_CARPARK'},
 				{name:'Recreation Sites', layer:'FORESTS_RECWEB_SITE'},
-				{name:'Groundwater management area', layer:'WATER_GMA'}
+				{name:'Groundwater management area', layer:'WATER_GMA'},
+				{name:'Urban Development Programme - Industrial Land 2011', layer:'UDP_IND2011'},
+				{name:'Planning Schemes', layer:'VMPLAN_PLAN_OVERLAY'}
 			]
 		}
 	};
