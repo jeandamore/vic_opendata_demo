@@ -31,12 +31,13 @@
 
 	}
 
-	var projection = new OpenLayers.Projection("EPSG:3111");
+	var fromProjection = new OpenLayers.Projection("EPSG:4326"); // transform from WGS 1984
+	var toProjection = new OpenLayers.Projection("EPSG:3111"); // vicgrid 94
 	var sportAndRec = new OpenLayers.Layer.Vector("(DHHS) Sports & Recreational Facilities", {
-		  projection: projection,
+		  projection: fromProjection,
 		  strategies: [new OpenLayers.Strategy.Fixed()],
 		  protocol: new OpenLayers.Protocol.HTTP({
-		    url: "SportandRec.geojson",
+		    url: "https://jeandamore.github.io/vic_opendata_demo/SportandRec.geojson",
 		    format: new OpenLayers.Format.GeoJSON()
 		  })
 		});
