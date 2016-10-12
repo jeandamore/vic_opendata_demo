@@ -20,7 +20,7 @@ function layers_geojson(map) {
 			  	projection: geojsonProjection,
 			  	strategies: [new OpenLayers.Strategy.Fixed()],
 			  	protocol: new OpenLayers.Protocol.HTTP({
-			  	  url: vic_opendata.geojson.url+'/'+vic_opendata.geojson.layers[i].layer+'.json',
+			  	  url: vic_opendata.geojson.url+'/'+vic_opendata.geojson.layers[i].layer,
 			  	  format: new OpenLayers.Format.GeoJSON()
 			  	})
 				});
