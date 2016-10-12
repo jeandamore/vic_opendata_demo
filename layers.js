@@ -1,7 +1,7 @@
 
 	var vic_opendata = {
 		wms: {
-			url: 'http://services.land.vic.gov.au/catalogue/publicproxy/guest/dv_geoserver/wms',
+			url: 'https://services.land.vic.gov.au/catalogue/publicproxy/guest/dv_geoserver/wms',
 			layers: [
 				{name:'Parks and Reserves', layer:'CROWNLAND_PARKRES'},
 				{name:'Parishes', layer:'VMADMIN_PARISH_POLYGON'},
