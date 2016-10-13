@@ -44,10 +44,10 @@ function region_change(selector) {
 
     var idx = selector.selectedIndex; 
     var which = selector.options[idx].value; 
-    //alert("test: " + which);
 
-    var lonlat = new OpenLayers.LonLat(2435310.8444746, 2525200.5773373);
+    var lonlat = new OpenLayers.LonLat(regions[which].lon, regions[which].lat);
     map.setCenter(lonlat);
+    map.zoomTo(regions[which].zoom);
 }
 
 
