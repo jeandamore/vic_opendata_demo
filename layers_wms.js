@@ -12,7 +12,8 @@ function layers_wms(map) {
 				{name:'Recreation Sites', layer:'FORESTS_RECWEB_SITE', visibility: true},
 				{name:'Groundwater management area', layer:'WATER_GMA', visibility: true},
 				{name:'Urban Development Programme - Industrial Land 2011', layer:'UDP_IND2011', visibility: true},
-				{name:'Planning Schemes', layer:'VMPLAN_PLAN_OVERLAY', visibility: false}
+				{name:'Planning Schemes', layer:'VMPLAN_PLAN_OVERLAY', visibility: false},
+				{name:'Environmental Assessment', layer:'CROWNLAND_PLMGEN', visibility: true}
 			]
 		}
 	};

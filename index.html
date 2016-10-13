@@ -8,6 +8,14 @@
 
 		<body>
 			<div id="map"></div>
+			<div id="region-selector-container">
+				<select id="region-selector" onchange="region_change(this);">
+  				<option value="bendigo">Bendigo</option>
+  				<option value="geelong">Geelong</option>
+  				<option value="knox">Knox</option>
+  				<option value="arden">Arden-Macaulay</option>
+				</select>
+			</div>
 		</body>
 
 		<script src="basemap.js"></script>

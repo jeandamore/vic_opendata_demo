@@ -35,7 +35,19 @@ function show_coords_on_click(map) {
 
 
 	var click = new OpenLayers.Control.Click();
-  map.addControl(click);
-  click.activate();
+    map.addControl(click);
+    click.activate();
 
 }
+
+function region_change(selector) {
+
+    var idx = selector.selectedIndex; 
+    var which = selector.options[idx].value; 
+    //alert("test: " + which);
+
+    var lonlat = new OpenLayers.LonLat(2435310.8444746, 2525200.5773373);
+    map.setCenter(lonlat);
+}
+
+
