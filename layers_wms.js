@@ -15,7 +15,8 @@ function layers_wms(map) {
 				{name:'Planning Schemes', layer:'VMPLAN_PLAN_OVERLAY', visibility: false},
 				{name:'Environmental Assessment', layer:'CROWNLAND_PLMGEN', visibility: false},
 				{name:'Land Use', layer:'CATCHMENTS_LANDUSE_2014', visibility: false},
-				{name:'Residential dwellings for Metropolitan Melbourne', layer:'UDP_HDD_STOCK2014', visibility: false}
+				{name:'Residential dwellings for Metropolitan Melbourne', layer:'UDP_HDD_STOCK2014', visibility: false},
+				{name:'Sea Level Rise 2040', layer:'COASTS_SLR20CM_2040', visibility: false}
 				
 			]
 		}
